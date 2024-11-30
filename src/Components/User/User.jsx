@@ -5,7 +5,7 @@ import Feed from '../Feed/Feed';
 import UserPhotoPost from './UserPhotoPost';
 import UserStats from './UserStats';
 import { UserContext } from '../../UserContext';
-import NotFound from '../User/NotFound';
+import NotFound from './NotFound';
 import Head from '../Helper/Head';
 
 const User = () => {
