@@ -1,7 +1,6 @@
-RewriteCond %{HTTPS} !=on 
-RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L, R=301]
-
-Options -MultiViews
-RewriteEngine On 
-RewriteCond %{REQUEST_FILENAME} !-f
+Options -Multiviews
+RewriteEngine On
+RewriteEngine %{REQUEST_FILENAME} !-f
+RewriteEngine %{REQUEST_FILENAME} !-d 
 RewriteRule ^ index.html [QSA, L]
+RewriteCond %{REQUEST_URI} index.html$1
